@@ -1,4 +1,4 @@
-# The project "*look out the window*"
+# The project "*zakrivayuschiy-teg*"
 **was** carried out for educational purposes at the **Yandex.The workshop**.
 Html, css and js were used in the course of the work.
 Work has been done on styling the page using css.
