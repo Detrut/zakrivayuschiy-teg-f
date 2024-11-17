@@ -119,6 +119,7 @@ body {
 }
 .card__text {
   font-size: 18px;
+  font-variation-settings: "wght" var(--font-weight-main);
 }
 .card__image-wrapper {
   position: relative;
