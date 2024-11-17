@@ -9,4 +9,4 @@ The work involved honing the skills of working with
 -  transition
 -  grid and flex
 
-[Link to project.](https://github.com/Detrut/zakrivayuschiy-teg-f)
+[Link to project.](https://github.com/Detrut/zakrivayuschiy-teg-f.git)
