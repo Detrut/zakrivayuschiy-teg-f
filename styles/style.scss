@@ -158,10 +158,6 @@ body {
         gap: 28px;
     }
 
-    &__button-wrapper {
-        margin-block-start: -4px;
-    }
-
     & img {
         width: 100%;
         z-index: 0;
@@ -180,6 +176,7 @@ body {
     display: flex;
     justify-content: end;
     gap: 6px;
+    margin-block-start: -4px;
 
     & .card__like-button {
         padding-top: 6px;
