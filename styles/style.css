@@ -1,9 +1,12 @@
 @charset "UTF-8";
+body {
+  background-image: var(--bg-gradient);
+  background-size: cover;
+}
+
 .page {
   font-family: var(--font-main);
   font-variation-settings: "wght" 400;
-  background-image: var(--bg-gradient);
-  background-size: cover;
   color: var(--main-color);
 }
 
@@ -48,6 +51,9 @@
   font-size: 14px;
   text-transform: uppercase;
   transition: opacity 0.3s ease;
+}
+.theme-menu__list button:hover {
+  cursor: pointer;
 }
 
 .theme-menu__button:focus {
@@ -105,10 +111,13 @@
   background-color: var(--background-color);
   border: 1px solid var(--main-color);
 }
+.card button:hover {
+  cursor: pointer;
+}
 .card__title {
   padding: 8px 0 4px 8px;
   font-size: 18px;
-  font-variation-settings: "wght" 800;
+  font-variation-settings: "wght" var(--font-weight-title);
 }
 .card__text {
   font-size: 18px;
@@ -261,6 +270,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.footer__button:hover {
+  cursor: pointer;
+}
 .footer__icon {
   max-width: 21px;
   mix-blend-mode: difference;
@@ -298,6 +310,9 @@
   text-transform: uppercase;
   height: 38px;
   grid-area: button;
+}
+.footer__dialog[open] .footer__dialog-button:hover {
+  cursor: pointer;
 }
 
 @media (width <= 375px) {
