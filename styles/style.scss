@@ -7,11 +7,22 @@ body {
     font-family: var(--font-main);
     font-variation-settings: 'wght' 400;
     color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
+    margin-block-start: 100px;
+    width: var(--content-width);
+    background-color: var(--background-color);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--main-color);
+    gap: 16px;
+    padding-block-start: 8.5rem;
+    padding-block-end: 1.375rem;
     font-family: var(--font-accent);
 
     &__title {
@@ -26,16 +37,6 @@ body {
 }
 
 .header__theme-menu {
-    margin-block-start: clamp(7.5rem, 7.122rem + 1.5311vw, 8.5rem);
-    width: var(--content-width);
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid var(--main-color);
-    gap: 16px;
-    padding-block-start: 8.5rem;
-    padding-block-end: 1.375rem;
 }
 
 
@@ -107,13 +108,13 @@ body {
 .cards {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 52px;
 }
 
 .card {
     width: var(--content-width);
     background-color: var(--background-color);
-    border: 1px solid var(--main-color);
+    border: 2px solid var(--main-color);
 
     & button:hover {
         cursor: pointer;
@@ -131,6 +132,11 @@ body {
 
     &__image-wrapper {
         position: relative;
+        max-height: var(--content-width);
+
+        & img {
+            border: 2px solid var(--main-color);
+        }
     }
 
     &__label {
@@ -147,8 +153,12 @@ body {
     &__wrapper {
         display: flex;
         flex-direction: column;
-        padding: 24px;
+        padding: 30px 24px 20px;
         gap: 28px;
+    }
+
+    &__button-wrapper {
+        margin-block-start: -4px;
     }
 
     & img {
@@ -192,13 +202,13 @@ body {
 
         & .core {
             fill: transparent;
-            transition: .3s 0.03s;
+            transition: .3s linear;
 
         }
 
         & .main-body {
             fill: transparent;
-            transition: .3s;
+            transition: .3s 0.03s linear;
         }
 
         & .contour {
@@ -208,12 +218,12 @@ body {
 
         &:hover .core {
             fill: var(--heart-color-contour);
-            transition: .3s;
+            transition: .3s linear;
         }
 
         &:hover .main-body {
             fill: var(--heart-color-contour);
-            transition: .3s 0.05s;
+            transition: .3s 0.05s linear;
         }
 
         &:active .core, &:active .main-body {
@@ -225,7 +235,7 @@ body {
 .card__icon-button > .is-liked {
     & .core {
         fill: var(--heart-color-body);
-        transition: 0.3s;
+        transition: 0.3s linear;
     }
 
     &:hover .core, &:hover .main-body {
@@ -234,12 +244,12 @@ body {
 
     & .main-body {
         fill: var(--heart-color-body);
-        transition: 0.3s 0.3s;
+        transition: 0.3s 0.3s linear;
     }
 
     & .contour {
         fill: var(--heart-color-body);
-        transition: 0.3s 0.06s;
+        transition: 0.3s 0.06s linear;
     }
 
     & {
@@ -305,7 +315,7 @@ body {
 
     &__button {
         width: clamp(19.125rem, 18.4399rem + 2.7751vw, 20.9375rem);
-        margin-block-start: 4.5rem;
+        margin-block-start: 76px;
         padding: 8px 18px 8px 18px;
         display: flex;
         align-items: center;
@@ -338,7 +348,7 @@ body {
           "button button";
 
         &::backdrop {
-            background-color: rgb(0 0 0 / 0.6);
+            background-color: rgb(0 0 0 / 0.75);
         }
 
         & .footer__dialog-icon {
@@ -369,15 +379,10 @@ body {
 
 @media (width <= 375px) {
     .header {
-        margin-block-start: -20px;
+        padding-block-start: 7.5rem;
 
         &__subtitle {
             font-size: 14px;
-        }
-
-        &__theme-menu {
-            padding-block-start: 7.5rem;
-            gap: 17px;
         }
     }
 
@@ -391,6 +396,11 @@ body {
 
     .card__wrapper {
         gap: 26px;
+    }
+
+    .card__label {
+        top: 22px;
+        right: 10px;
     }
 
     .footer__button {
