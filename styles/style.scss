@@ -21,8 +21,8 @@ body {
     align-items: center;
     border: 1px solid var(--main-color);
     gap: 16px;
-    padding-block-start: 8.5rem;
-    padding-block-end: 1.375rem;
+    padding-block-start: 136px;
+    padding-block-end: 22px;
     font-family: var(--font-accent);
 
     &__title {
@@ -92,7 +92,7 @@ body {
 }
 
 .theme-menu__button {
-    margin-inline-start: 2rem;
+    margin-inline-start: 32px;
 }
 
 .main {
@@ -374,7 +374,7 @@ body {
 
 @media (width <= 375px) {
     .header {
-        padding-block-start: 7.5rem;
+        padding-block-start: 120px;
 
         &__subtitle {
             font-size: 14px;
@@ -400,7 +400,7 @@ body {
 
     .footer__button {
         flex-direction: column;
-        margin-block-start: 3.25rem;
+        margin-block-start: 52px;
         gap: 4px;
         padding-block-end: 12px;
     }
