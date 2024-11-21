@@ -96,7 +96,7 @@ body {
 }
 
 .main {
-    margin-block-start: 76px;
+    margin-block-start: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,7 +310,7 @@ body {
 
     &__button {
         width: clamp(19.125rem, 18.4399rem + 2.7751vw, 20.9375rem);
-        margin-block-start: 76px;
+        margin-block-start: 52px;
         padding: 8px 18px 8px 18px;
         display: flex;
         align-items: center;
@@ -385,12 +385,13 @@ body {
         margin-inline-end: 12px;
     }
 
-    .main {
-        margin-block-start: 100px;
+    .cards {
+        gap: 47px;
     }
 
     .card__wrapper {
         gap: 26px;
+        padding: 27px 24px 28px;
     }
 
     .card__label {
